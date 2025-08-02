@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Book Session</title>
+    <link rel="stylesheet" href="../css/student.css" />
+    <style>
+      /* student.css */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f9f9f9;
+        color: #333;
+      }
+
+      header {
+        background-color: #4caf50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #333;
+        width: 200px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 60px;
+      }
+
+      nav a {
+        display: block;
+        padding: 1rem;
+        color: white;
+        text-decoration: none;
+      }
+
+      nav a:hover {
+        background-color: #575757;
+      }
+
+      main {
+        margin-left: 220px;
+        padding: 2rem;
+      }
+
+      .card {
+        background: white;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <header>Book a Session</header>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="search-tutors.html">Search Tutors</a>
+      <a href="book-session.html">Book Session</a>
+      <a href="my-sessions.html">My Sessions</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+    <main>
+      <div class="card">
+        <h2>Book a New Session</h2>
+        <form>
+          <label for="tutor">Tutor Name:</label><br />
+          <input type="text" id="tutor" name="tutor" /><br /><br />
+          <label for="subject">Subject:</label><br />
+          <input type="text" id="subject" name="subject" /><br /><br />
+          <label for="datetime">Date & Time:</label><br />
+          <input
+            type="datetime-local"
+            id="datetime"
+            name="datetime"
+          /><br /><br />
+          <button type="submit">Book</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="../css/student.css" />
+    <style>
+      /* student.css */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f9f9f9;
+        color: #333;
+      }
+
+      header {
+        background-color: #4caf50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #333;
+        width: 200px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 60px;
+      }
+
+      nav a {
+        display: block;
+        padding: 1rem;
+        color: white;
+        text-decoration: none;
+      }
+
+      nav a:hover {
+        background-color: #575757;
+      }
+
+      main {
+        margin-left: 220px;
+        padding: 2rem;
+      }
+
+      .card {
+        background: white;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <header>Student Dashboard</header>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="searchtutor.html">Search Tutors</a>
+      <a href="book-session.html">Book Session</a>
+      <a href="my-sessions.html">My Sessions</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+    <main>
+      <div class="card">
+        <h2>Welcome back, Student!</h2>
+        <p>You have 2 upcoming sessions.</p>
+      </div>
+      <div class="card">
+        <h3>Next Session</h3>
+        <p>Math with John Doe – Aug 2, 4:00 PM</p>
+      </div>
+    </main>
+  </body>
+</html>
